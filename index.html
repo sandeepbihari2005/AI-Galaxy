@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Navigator for Students</title>
+    <!-- Use Google Fonts (Outfit and Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Effects -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+    <header>
+        <div class="container">
+            <div class="header-badge"><i class="fa-solid fa-graduation-cap"></i> Student Edition</div>
+            <h1>AI <span class="gradient-text">Navigator</span></h1>
+            <p class="subtitle">Discover the best AI Tools, Autonomous Agents, Workflows, and Prompts to supercharge
+                your academic journey.</p>
+
+            <div class="controls-wrapper">
+                <div class="toggle-group">
+                    <button class="toggle-btn active" data-view="tools"><i class="fa-solid fa-wrench"></i> AI
+                        Tools</button>
+                    <button class="toggle-btn" data-view="agents"><i class="fa-solid fa-robot"></i> AI Agents</button>
+                    <button class="toggle-btn" data-view="prompts"><i class="fa-solid fa-terminal"></i> Prompt
+                        Library</button>
+                </div>
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search for tools, use cases, or subjects...">
+                </div>
+            </div>
+
+            <!-- Category Filters (Populated Dynamically) -->
+            <div class="category-filters" id="categoryFilters">
+                <!-- Buttons will be injected here -->
+            </div>
+            <div class="results-stats">
+                <span id="resultsCount">Loading...</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Dynamic Content Area -->
+        <div id="contentArea" class="grid">
+            <!-- Cards/Timelines/Prompts will be injected dynamically -->
+        </div>
+    </main>
+
+    <footer>
+        <p>Built with <i class="fa-solid fa-bolt" style="color: #fbbf24;"></i> for the Student AI Community.</p>
+    </footer>
+
+    <!-- Load Local Student Data -->
+    <script src="student_data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
