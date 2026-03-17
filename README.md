@@ -26,3 +26,4 @@ The goal of AI Galaxy is to create a central hub where anyone can discover and l
 ## 👨‍💻 Developer
 
 Sandeep Kumar Bihari
+Collaborated with Prem Kumar Sharma
